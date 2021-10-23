@@ -23,6 +23,13 @@ public class Main {
 				System.out.println("Ulaz nema 3 parametra"); 
 				continue;	//nama trebaju tacno tri elementa, ako ima 2 ili 5 el ice continue, ako nije, nastavice nesto raditi (sabirati npr)
 			}
+			int x = Integer.parseInt(b[0]); //prebacujem 2 stringa u brojeve, ali prvo ih isparsiramo
+			int y = Integer.parseInt(b[2]);
+			if(b[1].equals("+")) {
+				System.out.println("x + y");
+			}else {
+				System.out.println("Nije podrzana operacija!");
+			}
 		}
 	}
 
