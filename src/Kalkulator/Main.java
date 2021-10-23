@@ -18,6 +18,11 @@ public class Main {
 			if(a.equals("exit") || a.equals("kraj")) {
 				break;
 			}
+			String[] b = a.split(" "); //split nad stringom vraca listu stringova koji se nalaze u stringu a - zato pravimo listu stringova i smestamo taj rez
+			if(b.length != 3) { //ne treba .length() jer nije f-ja, nego je polje - to sto vraca a.split()
+				System.out.println("Ulaz nema 3 parametra"); 
+				continue;	//nama trebaju tacno tri elementa, ako ima 2 ili 5 el ice continue, ako nije, nastavice nesto raditi (sabirati npr)
+			}
 		}
 	}
 
