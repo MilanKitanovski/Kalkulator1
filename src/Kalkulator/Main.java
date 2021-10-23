@@ -12,6 +12,9 @@ public class Main {
 		while(true) {
 			
 			String a = s1.nextLine(); //uz pomoc . pozivamo neku metodu iz skenera
+			if(a.equals("")) {
+				continue; //ako je prazan string, preskacemo tu iteraciju
+			}
 			if(a.equals("exit") || a.equals("kraj")) {
 				break;
 			}
