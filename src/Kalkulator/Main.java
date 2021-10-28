@@ -26,11 +26,14 @@ public class Main {
 			int x = Integer.parseInt(b[0]); //prebacujem 2 stringa u brojeve, ali prvo ih isparsiramo
 			int y = Integer.parseInt(b[2]);
 			if(b[1].equals("+")) {
-				System.out.println("x + y");
+				addition(x, y);
 			}else {
 				System.out.println("Nije podrzana operacija!");
 			}
 		}
 	}
-
+	/*static - staticka metoda - Kao global u cpp - da uvek mozes pristupiti njoj, u bilo kom delu projekta*/
+	public static void addition(int a,int b) {
+		System.out.println(a+b);
+	}
 }
