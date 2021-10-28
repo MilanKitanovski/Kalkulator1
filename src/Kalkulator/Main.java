@@ -29,16 +29,22 @@ public class Main {
 				addition(x, y);
 			}else if(b[1].equals("-")) {
 				substraction(x, y);
+			}else if(b[1].equals("/")) {
+				division(x, y);
 			}else {
 				System.out.println("Nije podrzana operacija!");
 			}
 		}
 	}
+	
 	/*static - staticka metoda - Kao global u cpp - da uvek mozes pristupiti njoj, u bilo kom delu projekta*/
 	public static void addition(int a,int b) {
 		System.out.println(a+b);
 	}
 	public static void substraction(int a,int b) {
 		System.out.println(a-b);
+	}
+	public static void division(int a,int b) {
+		System.out.println(a/b);
 	}
 }
