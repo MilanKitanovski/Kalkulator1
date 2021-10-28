@@ -31,11 +31,14 @@ public class Main {
 				substraction(x, y);
 			}else if(b[1].equals("*")) {
 				multiplication(x, y);
+			}else if(b[1].equals("/")) {
+				division(x, y);
 			}else {
 				System.out.println("Nije podrzana operacija!");
 			}
 		}
 	}
+	
 	/*static - staticka metoda - Kao global u cpp - da uvek mozes pristupiti njoj, u bilo kom delu projekta*/
 	public static void addition(int a,int b) {
 		System.out.println(a+b);
@@ -43,7 +46,11 @@ public class Main {
 	public static void substraction(int a,int b) {
 		System.out.println(a-b);
 	}
+
 	public static void multiplication(int a,int b) {
 		System.out.println(a*b);
+	}
+	public static void division(int a,int b) {
+		System.out.println(a/b);
 	}
 }
